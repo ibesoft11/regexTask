@@ -10,7 +10,7 @@ function printNames(text){
 }
 
 function generateLink(text){
-    var regEx = new RegExp("((https?|ftps?)://(www)?([a-zA-Z0-9-_]+\.[a-z]{2,6}))","gim");
+    var regEx = new RegExp("((https?|ftps?)://(www)?([a-zA-Z0-9-_]+\.[a-z]{2,6}\.[a-z]{2,6}))","gim");
     ntext = text.replace(regEx, "<a href='$1'>$4</a>");
     return console.log(ntext);   
     
